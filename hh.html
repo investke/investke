@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   
+    <title>SecureInvest - Your Investment Platform</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+          overflow-x: hidden;
+        }
+
+        /* Custom CSS for the main page design */
+        section {
+            margin: 4rem 0;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .cta-buttons a {
+            margin: 0.5rem;
+        }
+
+        .cta-buttons a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us,
+        .our-services,
+        .investment-roi,
+        .why-choose,
+        .testimonials,
+        .contact-us,
+        .newsletter,
+        .our-team,
+        .faqs,
+        .subscribe-youtube {
+            background-color: #f9fafc;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-us img,
+        .our-services img,
+        .investment-roi img,
+        .why-choose img,
+        .testimonials img,
+        .contact-us img,
+        .newsletter img,
+        .our-team img,
+        .faqs img,
+        .subscribe-youtube img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .newsletter-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input,
+        .newsletter-form button {
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+
+        .our-team-member {
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .our-team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .faq-item {
+            border-bottom: 2px solid #e2e8f0;
+            padding: 1rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .youtube-channel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .youtube-channel iframe {
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600;700&display=swap">
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-semibold">SecureInvest</div>
+            <nav>
+                <a href="/login.php" class="text-white mr-4">Login</a>
+                <a href="/register.php" class="text-white">Register</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto py-8 flex-grow">
+        <section class="text-center">
+            <h1 class="text-4xl font-semibold">Welcome to SecureInvest</h1>
+            <p class="text-lg text-gray-600 mt-4">Your trusted partner for smart investments.</p>
+            <div class="cta-buttons mt-8">
+                <a href="/register.php"
+                    class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full inline-block mr-4 text-lg">Register</a>
+                <a href="/login.php"
+                    class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full inline-block text-lg">Login</a>
+            </div>
+        </section>
+        <img
+            src="https://img.freepik.com/free-photo/money-with-charts_23-2148542028.jpg?w=740&t=st=1698452480~exp=1698453080~hmac=9a19cba07b698c4404c90579a2d2d152a7813422a084d1177895433667702a05"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+        <section class="mt-8 text-center about-us">
+            <h2 class="text-2xl font-semibold">About Us</h2>
+            <p class="text-gray-600 mt-4">
+                SecureInvest is a leading investment platform dedicated to helping you achieve your financial goals with
+                confidence. We provide secure and user-friendly investment solutions for everyone.
+            </p>
+        </section>
+        
+        <section class="mt-8 text-center our-services">
+            <h2 class="text-2xl font-semibold">Our Services</h2>
+            <p class="text-gray-600 mt-4">
+                We offer a range of investment services tailored to your needs. From personalized portfolios to
+                real-time tracking, we provide the tools and support you need for successful investing.
+            </p>
+        </section>
+        
+        <section class="mt-8 text-center investment-roi">
+            <h2 class="text-2xl font-semibold">Investment ROI</h2>
+            <p class="text-gray-600 mt-4">
+                SecureInvest offers a 50% return on investment, providing you with attractive and reliable returns. Your
+                success is our priority.
+            </p>
+        </section>
+        <img
+            src="https://img.freepik.com/free-vector/business-people-analyzing-statistical-charts_74855-5084.jpg?w=740&t=st=1698453005~exp=1698453605~hmac=0f308d89ac9b7ad7cbb4a5713c0e7d6be4933c0fcace5bcebe184ec30701f0aa"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+        <section class="mt-8 text-center why-choose">
+            <h2 class="text-2xl font-semibold">Why Choose SecureInvest?</h2>
+            <p class="text-gray-600 mt-4">
+                - Secure and transparent investment platform<br>
+                - Personalized portfolios to suit your goals<br>
+                - Real-time tracking and reporting<br>
+                - Dedicated customer support 24/7
+            </p>
+        </section>
+        <img
+            src="https://img.freepik.com/free-photo/business-people-using-digital-tablet_107420-95867.jpg?w=1380&t=st=1706950155~exp=1706950755~hmac=cad9a9d845f4e3c9d67ef455136607e506ab6c95250fa00a428b593df43a6ae4"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+        <section class="mt-8 text-center testimonials">
+            <h2 class="text-2xl font-semibold">What Our Investors Say</h2>
+            <div class="mt-4">
+                <p class="text-gray-600 italic">"SecureInvest has transformed my approach to investing. The returns
+                    are impressive, and the platform is user-friendly."</p>
+                <p class="text-gray-600 italic">"I appreciate the personalized service and the transparency in every
+                    transaction. Highly recommended!"</p>
+            </div>
+        </section>
+        <img
+            src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?w=826&t=st=1706949773~exp=1706950373~hmac=6aa0a70a24809642c901ac686597dcf448383244b323ac72bb68694dd3e1c149"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+        <section class="mt-8 text-center contact-us">
+            <h2 class="text-2xl font-semibold">Contact Us</h2>
+            <p class="text-gray-600 mt-4">
+                Have questions or need assistance? Our support team is available 24/7 to provide dedicated service and
+                support on your investment journey.
+            </p>
+        </section>
+        <img
+            src="https://img.freepik.com/free-vector/web-app-subscribe-button-online-followers-vector_1017-45945.jpg?w=1800&t=st=1706950198~exp=1706950798~hmac=5e819cb6ca4b5417c1da7820a98eea85d39f8e1e5ce3f88b98480e433d679d24"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+      <section class="mt-8 text-center newsletter">
+          <h2 class="text-2xl font-semibold">Subscribe to Our Newsletter</h2>
+          <p class="text-gray-600 mt-4">
+              Stay updated with the latest investment trends and SecureInvest news. Subscribe to our newsletter for
+              valuable insights and updates.
+          </p>
+          <form action="#" method="POST" class="mt-4 newsletter-form" id="newsletterForm">
+              <input type="email" name="email" id="email" placeholder="Enter your email"
+                  class="w-full p-2 border rounded-lg focus:outline-none">
+              <button type="submit"
+                  class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full">Subscribe</button>
+          </form>
+      </section>
+        <img
+            src="https://img.freepik.com/free-vector/startup-concept-illustration_114360-4952.jpg?w=740&t=st=1698453620~exp=1698454220~hmac=5ea614124a7ff4f74b181bfe99fc871a154146f8cc45c84f42c4b781ae5c3ab4"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+        <section class="mt-8 text-center our-team">
+            <h2 class="text-2xl font-semibold">Our Team</h2>
+            <p class="text-gray-600 mt-4">
+                Meet the passionate and dedicated team behind SecureInvest. We are committed to ensuring your
+                investment success.
+            </p>
+            <div class="flex flex-wrap justify-center mt-8">
+                <div class="our-team-member mx-4">
+                    <img src="https://img.freepik.com/free-vector/gradient-avatar-illustration_52683-142438.jpg?w=826&t=st=1706949967~exp=1706950567~hmac=aa5bdbd3c074ef9cfd188962aa6d866455cca9008e6aada07071b7f5b26a46d1" alt="Team Member" class="w-full h-32 object-cover">
+                    <h3 class="text-xl font-semibold mt-2">John Mwangi</h3>
+                    <p class="text-gray-600">CEO</p>
+                </div>
+                <div class="our-team-member mx-4">
+                    <img src="https://img.freepik.com/free-vector/hand-drawn-black-teacher-clipart-illustration_23-2150940840.jpg?w=826&t=st=1706950044~exp=1706950644~hmac=3f7b3393cae33511bff84816d08163424b3fd20269e896eddcdd1275d0cc2243" alt="Team Member" class="w-full h-32 object-cover">
+                    <h3 class="text-xl font-semibold mt-2">Jane Wanjiru</h3>
+                    <p class="text-gray-600">CTO</p>
+                </div>
+                <div class="our-team-member mx-4">
+                    <img src="https://img.freepik.com/premium-vector/man-wearing-smart-glass_107173-11752.jpg?w=740" alt="Team Member" class="w-full h-32 object-cover">
+                    <h3 class="text-xl font-semibold mt-2">Alex Kamau</h3>
+                    <p class="text-gray-600">CFO</p>
+                </div>
+            </div>
+        </section>
+        <img
+            src="https://img.freepik.com/free-vector/faqs-concept-illustration_114360-5215.jpg?w=826&t=st=1706949846~exp=1706950446~hmac=33d5596c09f6fe6bee0d4b51f9ca5679a8978790e7a39d37c98246561ce59631"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+        <section class="mt-8 text-center faqs">
+            <h2 class="text-2xl font-semibold">Frequently Asked Questions</h2>
+            <div class="mt-4">
+                <div class="faq-item">
+                    <h3 class="text-lg font-semibold">How can I get started with SecureInvest?</h3>
+                    <p class="text-gray-600">To get started, simply register for an account on our platform. Once
+                        registered, you can explore our investment services and choose a plan that suits your
+                        preferences.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="text-lg font-semibold">Is my investment secure with SecureInvest?</h3>
+                    <p class="text-gray-600">Yes, we prioritize the security of your investments. Our platform employs
+                        advanced security measures to ensure the safety and confidentiality of your financial
+                        information.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="text-lg font-semibold">What is the minimum investment amount?</h3>
+                    <p class="text-gray-600">The minimum investment amount varies depending on the investment plan you
+                        choose. Please refer to our investment plans for detailed information on minimum investment
+                        requirements.</p>
+                </div>
+            </div>
+        </section>
+        <img
+            src="https://img.freepik.com/free-vector/customer-feedback-concept-illustration_114360-3892.jpg?w=740&t=st=1698453940~exp=1698454540~hmac=7b7aeeff40b5ac116f17346a7242b2e8db16c2c7f303787f2bb245af15d2ccbc"
+            alt="Investment Image" class="w-full max-w-screen-xl mx-auto mt-8 rounded-lg shadow-lg">
+        <section class="mt-8 text-center subscribe-youtube">
+            <h2 class="text-2xl font-semibold">Subscribe to Our YouTube Channel</h2>
+            <p class="text-gray-600 mt-4">
+                Stay informed with video updates on investment strategies, market trends, and SecureInvest highlights.
+                Subscribe to our YouTube channel for exclusive content.
+            </p>
+            <div class="youtube-channel mt-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/example" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                    picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <!-- Add more sections as needed -->
+    </main>
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        &copy; 2024 SecureInvest. All rights reserved.
+    </footer>
+
+    <!-- Add a notification element to display messages -->
+    <div id="notification" class="notification"></div>
+
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            var email = document.getElementById("email").value;
+            if (validateEmail(email)) {
+                showNotification("Subscribed successfully!");
+                // Additional logic can be added here, such as sending the email to a server
+            } else {
+                showNotification("Invalid email address!", true);
+            }
+        });
+
+        function validateEmail(email) {
+            // Simple email validation
+            var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return regex.test(email);
+        }
+
+        function showNotification(message, isError = false) {
+            var notification = document.getElementById("notification");
+            notification.textContent = message;
+            notification.className = "notification" + (isError ? " error" : "");
+            notification.style.display = "block";
+
+            setTimeout(function () {
+                notification.style.display = "none";
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
